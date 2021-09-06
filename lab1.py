@@ -1,5 +1,5 @@
 import requests
 
-print(requests.__version__)
+r = requests.get('https://raw.githubusercontent.com/bholm/CMPUT404-LAB1/master/lab1.py')
 
-r = requests.get('http://www.google.com/')
+print(r.content.decode("utf-8"))
